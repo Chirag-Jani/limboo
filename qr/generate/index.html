@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Limboo</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Limboo</h1>
+      </header>
+      <div class="form">
+        <input
+          class="name"
+          type="text"
+          spellcheck="false"
+          placeholder="Enter Your Name"
+        />
+        <input
+          class="number"
+          type="tel"
+          spellcheck="false"
+          placeholder="Enter Your Mobile Number"
+        />
+        <input
+          class="members"
+          type="number"
+          spellcheck="false"
+          placeholder="Enter Number of Members"
+        />
+        <button class="generateButton" onclick="createQR()">Get My Pass</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code" />
+      </div>
+    </div>
+    <div class="pass">
+      <div class="info">
+        Name:
+        <h3 class="nameInPass"></h3>
+        Mobile:
+        <h3 class="mobileInPass"></h3>
+        Members:
+        <h3 class="membersInPass"></h3>
+      </div>
+      <div class="code">
+        <img src="" alt="" class="qrInPass" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
